@@ -1,0 +1,316 @@
+ {
+  "Title": "Content",
+  "Content": [
+    {
+      "Time": "2019 - Present",
+      "Head": "Freelance",
+      "Description": "As a freelance developer, I work along side teams of all sizes. I have learned to use many different project management tools and methods. My primary responsibilities at the agencies were testing utilities, react component development, and debugging code."
+    },
+    {
+      "Time": "2017 - 2019",
+      "Head": "Carbon",
+      "Description": "Carbon is a web development agency tailored towards small business clients, and sub contracting under other agencies. Apart of the team I developed their library of testing utilities; as well as, implemented agile project management into their workflow."
+    },
+    {
+      "Time": "2016 - 2017",
+      "Head": "Denver IT Consultants",
+      "Description": "Field IT Consultant solving network, and system issues. Communicated with the client about the issue, diagnosed, and solved issues on site. Developed a ticket system to allow clients, techs, and management to monitor and communicate over issues."
+    }
+
+  ],
+  "MyWorkContent": [
+
+    {
+      "Title": "J",
+      "Class": "work-card-jeff",
+      "Live": true,
+      "Subtitle": "Website - Front End",
+      "Completion": "November 2019",
+      "URL": "http://jonesbodywork.com",
+      "Description": "A rebranding of his site, to better represnet his brand, and his commitment to his clients.",
+      "Image": {
+        "Filename": "work-02.png"
+      },
+      "Technologies": {
+        "Front-End": ["Javascript", "HTML", "CSS", "Bootstrap", "PHP"],
+        "Back-End": [""]
+      }
+    },
+    {
+      "Title": "Posh",
+      "Class": "work-card-posh",
+      "Live": true,
+      "Subtitle": "Website - Front End",
+      "Completion": "December 2019",
+      "URL": "https://hireposh.com",
+      "Description": "Photography studio looking to showcase landscape and portrait photography.",
+      "Image": {
+        "Filename": "work-01.png"
+      },
+      "Technologies": {
+        "Front-End": ["Javascript", "HTML", "CSS", "Bootstrap", "PHP"],
+        "Back-End": [""]
+      } 
+    },
+    {
+      "Title": "Barn house",
+      "Class": "work-card-barnhouse",
+      "Live": true,
+      "Subtitle": "Website - Full Stack",
+      "Completion": "January 2019",
+      "URL": "https://barnhousetap.com",
+      "Description": "Photography studio, looking to showcase landscape and portrait photography.",
+      "Image": {
+        "Filename": "work-03.png"
+      },
+      "Technologies": {
+        "Front-End": ["Javascript", "HTML", "CSS", "Bootstrap", "PHP"],
+        "Back-End": ["Firestore"]
+      } 
+    },
+    {
+      "Title": "Ohle",
+      "Title2": "sport",
+      "Class": "work-card-ohle",
+      "Class2": "ohle-script",
+      "Live": false,
+      "Subtitle": "Ecommerce - Full Stack",
+      "Completion": "June 2020",
+      "URL": "https://ohlesport.com",
+      "Description": "Photography studio, looking to showcase landscape and portrait photography.",
+      "Image": {
+        "Filename": "work-05.png"
+      },
+      "Technologies": {
+        "Front-End": ["PHP", "Javascript", "HTML", "CSS"],
+        "Back-End": ["Wordpress", "PHP", "WooCommerce"]
+      } 
+    },
+    {
+      "Title": "Double ",
+      "Title2":  "  Down",
+      "Class": "work-card-double-down",
+      "Class2": "double-script",
+      "Live": false,
+      "Subtitle": "Game - Full Stack",
+      "Completion": "June 2020",
+      "URL": "https://github.com/kyledkearney/double-down",
+      "Description": "Photography studio, looking to showcase landscape and portrait photography.",
+      "Image": {
+        "Filename": "work-06.png"
+      },
+      "Technologies": {
+        "Front-End": ["React.js", "Javascript", "Bootstrap", "Restful API", "CSS", "SASS"],
+        "Back-End": ["Cloud Firestore", "Express", "Google Cloud Platform"]
+      } 
+    },
+    {
+      "Title": "Luca",
+      "Class": "work-card-luca",
+      "Live": false,
+      "Subtitle": "IOS App - Full Stack",
+      "Completion": "Spring 2021",
+      "URL": "https://kyledkearney.github.io/luca-landing/",
+      "Description": "Budget app, that combines data visualization with humancentric features",
+      "Image": {
+        "Filename": "work-04.png"
+      },
+      "Technologies": {
+        "Front-End": ["Swift", "Appkit", "CloudKit"],
+        "Back-End": []
+      } 
+    }
+  ],
+  "Skills": [
+      {
+        "Type": "Front End",
+        "Children": [
+          {
+            "Title": "React",
+            "LogoUrl": "skills_react.png",
+            "LogoAlt": "React Logo"
+          },
+          {
+            "Title": "Vue",
+            "LogoUrl": "skills_vue.png",
+            "LogoAlt": "Vue Logo"
+          },
+          {
+            "Title": "Angular",
+            "LogoUrl": "skills_angular.png",
+            "LogoAlt": "Angular Logo"
+          },
+          {
+            "Title": "RESTful API",
+            "LogoUrl": "skills_api.png",
+            "LogoAlt": "API Logo"
+          },
+          {
+            "Title": "HTML",
+            "LogoUrl": "skills_html.png",
+            "LogoAlt": "HTML Logo"
+          },
+          {
+            "Title": "CSS",
+            "LogoUrl": "skills_css.png",
+            "LogoAlt": "Javascript Logo"
+          },
+          {
+            "Title": "SASS",
+            "LogoUrl": "skills_sass.png",
+            "LogoAlt": "SASS Logo"
+          },
+          {
+            "Title": "Webpack",
+            "LogoUrl": "skills_webpack.png",
+            "LogoAlt": "Webpack Logo"
+          }
+        ]
+      },
+      {
+        "Type": "Back End",
+        "Children": [
+          {
+            "Title": "Node",
+            "LogoUrl": "skills_node.png",
+            "LogoAlt": "Node Logo"
+          },
+          {
+            "Title": "Laravel",
+            "LogoUrl": "skills_laravel.png",
+            "LogoAlt": "Laravel Logo"
+          },
+          {
+            "Title": "My SQL",
+            "LogoUrl": "skills_mysql.png",
+            "LogoAlt": "MY SQL Logo"
+          },
+          {
+            "Title": "PHP",
+            "LogoUrl": "skills_php.png",
+            "LogoAlt": "PHP Logo"
+          },
+          {
+            "Title": "MongoDB",
+            "LogoUrl": "skills_mongo.png",
+            "LogoAlt": "MongoDB Logo"
+          },
+          {
+            "Title": "AWS",
+            "LogoUrl": "skills_aws.png",
+            "LogoAlt": "AWS Logo"
+          },
+          {
+            "Title": "Google Cloud",
+            "LogoUrl": "skills_google.png",
+            "LogoAlt": "Google Cloud Platform Logo"
+          },
+          {
+            "Title": "Mamp",
+            "LogoUrl": "skills_mamp.png",
+            "LogoAlt": "MAMP Logo"
+          }
+        ]
+      },
+      {
+        "Type": "Dev Ops",
+        "Children": [
+          {
+            "Title": "Github",
+            "LogoUrl": "skills_github.png",
+            "LogoAlt": "Github Logo"
+          },
+          {
+            "Title": "BitBucket",
+            "LogoUrl": "skills_bitbucket.png",
+            "LogoAlt": "BitBucket Logo"
+          },
+          {
+            "Title": "Mocha",
+            "LogoUrl": "skills_mocha.png",
+            "LogoAlt": "Mocha Logo"
+          },
+          {
+            "Title": "Trello",
+            "LogoUrl": "skills_trello.png",
+            "LogoAlt": "Trello Logo"
+          },
+          {
+            "Title": "Docker",
+            "LogoUrl": "skills_docker.png",
+            "LogoAlt": "Docker Logo"
+          }
+        ]
+      },
+      {
+        "Type": "Design",
+        "Children": [
+          {
+            "Title": "Illustrator",
+            "LogoUrl": "skills_ai.png",
+            "LogoAlt": "Adobe Illustrator Logo"
+          },
+          {
+            "Title": "Photoshop",
+            "LogoUrl": "skills_ps.png",
+            "LogoAlt": "Adobe Photoshop Logo"
+          },
+          {
+            "Title": "Indesign",
+            "LogoUrl": "skills_id.png",
+            "LogoAlt": "Adobe Indesign Logo"
+          },
+          {
+            "Title": "XD",
+            "LogoUrl": "skills_xd.png",
+            "LogoAlt": "Adobe XD Logo"
+          },
+          {
+            "Title": "User Experience",
+            "LogoUrl": "skills_ux.png",
+            "LogoAlt": "User Experience Logo"
+          },
+          {
+            "Title": "User Interface",
+            "LogoUrl": "skills_ui.png",
+            "LogoAlt": "User Interface Logo"
+          },
+          {
+            "Title": "Color Theory",
+            "LogoUrl": "skills_color.png",
+            "LogoAlt": "Color Wheel"
+          },
+          {
+            "Title": "Typography",
+            "LogoUrl": "skills_typography.png",
+            "LogoAlt": "Typography Logo"
+          }
+        ]
+      },
+      {
+        "Type": "Still Installing",
+        "Children": [
+          {
+            "Title": "Penmanship",
+            "LogoUrl": "skills_penmanship.png",
+            "LogoAlt": "Penmanship Logo"
+          },
+          {
+            "Title": "Spanish",
+            "LogoUrl": "skills_spanish.png",
+            "LogoAlt": "Spanish Logo"
+          },
+          {
+            "Title": "Swift",
+            "LogoUrl": "skills_swift.png",
+            "logoAlt": "Swift Logo"
+          },
+          {
+            "Title": "Python",
+            "LogoUrl": "skills_python.png",
+            "LogoAlt": "Python Logo"
+          }
+        ]
+      } 
+  ]
+}
