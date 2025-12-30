@@ -189,35 +189,35 @@ function Role({ role }: { role: Role }) {
 function Resume() {
   let resume: Array<Role> = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
+      company: 'KRNY Digital',
+      title: 'Lead Full Stack Engineer',
       logo: logoPlanetaria,
-      start: '2019',
+      start: '2023',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
+      company: 'Lead Sherpa',
+      title: 'Lead Frontend Engineer',
       logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
+      start: '2021',
+      end: '2023',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
+      company: 'Lead Sherpa',
+      title: 'Frontend Engineer',
       logo: logoFacebook,
-      start: '2011',
-      end: '2014',
+      start: '2020',
+      end: '2021',
     },
     {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
+      company: 'Booster Apps',
+      title: 'Frontend Engineer',
       logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      start: '2019',
+      end: '2020',
     },
   ]
 
@@ -277,13 +277,13 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Software designer, founder, and amateur astronaut.
+            Experienced Engineer Building Production Web Apps
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+            I’m Kyle, a software engineer based in Grand Rapids, MI. I help
+            teams design, build, and ship reliable, production-ready web
+            applications, with a focus on scalable front-end systems and
+            collaborative tools.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -295,6 +295,11 @@ export default async function Home() {
               href="https://www.linkedin.com/in/kylekrny/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
+            />
+            <SocialLink
+              href="mailto:hello@kylekearney.com"
+              icon={MailIcon}
+              aria-label="Email hello@kylekearney.com"
             />
           </div>
         </div>
