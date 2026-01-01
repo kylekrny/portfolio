@@ -11,14 +11,14 @@ import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'DrillDown',
     description:
       'Creating technology to empower civilians to explore space on their own terms.',
     link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
     logo: logoPlanetaria,
   },
   {
-    name: 'Animaginary',
+    name: 'Lead Sherpa',
     description:
       'High performance web animation library, hand-written in optimized WASM.',
     link: { href: '#', label: 'github.com' },

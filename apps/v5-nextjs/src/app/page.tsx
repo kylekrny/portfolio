@@ -5,12 +5,7 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
-import {
-  GitHubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  XIcon,
-} from '@/components/SocialIcons'
+import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
@@ -22,6 +17,10 @@ import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
+
+import logoBoosterApps from '@/images/logos/booster-apps-logo.png'
+import logoLeadSherpa from '@/images/logos/lead-sherpa-logo.jpeg'
+import logoPersonal from '@/images/logos/krny-logo.jpg'
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -160,17 +159,22 @@ function Role({ role }: { role: Role }) {
 
   return (
     <li className="flex gap-4">
-      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md ring-1 shadow-zinc-800/5 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-        <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
+      <div className="relative mt-1 flex h-9 w-9 flex-none items-center justify-center rounded-full shadow-md ring-1 shadow-zinc-800/5 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+        <Image
+          src={role.logo}
+          alt=""
+          className="h-9 w-9 rounded-full"
+          unoptimized
+        />
       </div>
       <dl className="flex flex-auto flex-wrap gap-x-2">
-        <dt className="sr-only">Company</dt>
-        <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
-          {role.company}
-        </dd>
         <dt className="sr-only">Role</dt>
-        <dd className="text-xs text-zinc-500 dark:text-zinc-400">
+        <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
           {role.title}
+        </dd>
+        <dt className="sr-only">Company</dt>
+        <dd className="text-xs text-zinc-500 dark:text-zinc-400">
+          {role.company}
         </dd>
         <dt className="sr-only">Date</dt>
         <dd
@@ -191,7 +195,7 @@ function Resume() {
     {
       company: 'KRNY Digital',
       title: 'Lead Full Stack Engineer',
-      logo: logoPlanetaria,
+      logo: logoPersonal,
       start: '2023',
       end: {
         label: 'Present',
@@ -201,21 +205,21 @@ function Resume() {
     {
       company: 'Lead Sherpa',
       title: 'Lead Frontend Engineer',
-      logo: logoAirbnb,
+      logo: logoLeadSherpa,
       start: '2021',
       end: '2023',
     },
     {
       company: 'Lead Sherpa',
       title: 'Frontend Engineer',
-      logo: logoFacebook,
+      logo: logoLeadSherpa,
       start: '2020',
       end: '2021',
     },
     {
       company: 'Booster Apps',
       title: 'Frontend Engineer',
-      logo: logoStarbucks,
+      logo: logoBoosterApps,
       start: '2019',
       end: '2020',
     },
