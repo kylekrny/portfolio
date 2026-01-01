@@ -211,7 +211,7 @@ function Role({ role }: { role: Role }) {
   )
 }
 
-function Highlights() {
+function Expertise() {
   let highlights: Array<string> = [
     'Architect and maintain complex React state and UI systems in collaborative applications.',
     'Develop serverless backend logic using Cloud Functions and event-driven workflows.',
@@ -224,7 +224,7 @@ function Highlights() {
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <TerminalIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Capabilities</span>
+        <span className="ml-3">Expertise</span>
       </h2>
       <ul className="mt-6 list-disc space-y-4 pl-5">
         {highlights.map((highlight, highlightIndex) => (
@@ -373,7 +373,7 @@ export default async function Home() {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Highlights />
+            <Expertise />
             <Resume />
           </div>
         </div>
