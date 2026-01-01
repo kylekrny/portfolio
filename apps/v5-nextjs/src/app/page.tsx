@@ -18,6 +18,25 @@ import logoBoosterApps from '@/images/logos/booster-apps-logo.png'
 import logoLeadSherpa from '@/images/logos/lead-sherpa-logo.jpeg'
 import logoPersonal from '@/images/logos/krny-logo.jpg'
 
+function TerminalIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      className="size-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-400"
+        d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"
+      />
+    </svg>
+  )
+}
+
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg
@@ -31,11 +50,11 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
     >
       <path
         d="M2.75 7.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
-        className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
+        className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-400"
       />
       <path
         d="m4 6 6.024 5.479a2.915 2.915 0 0 0 3.952 0L20 6"
-        className="stroke-zinc-400 dark:stroke-zinc-500"
+        className="stroke-zinc-400 dark:stroke-zinc-400"
       />
     </svg>
   )
@@ -50,15 +69,16 @@ function BriefcaseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden="true"
+      stroke="currentColor"
       {...props}
     >
       <path
         d="M2.75 9.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
-        className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
+        className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-400"
       />
       <path
         d="M3 14.25h6.249c.484 0 .952-.002 1.316.319l.777.682a.996.996 0 0 0 1.316 0l.777-.682c.364-.32.832-.319 1.316-.319H21M8.75 6.5V4.75a2 2 0 0 1 2-2h2.5a2 2 0 0 1 2 2V6.5"
-        className="stroke-zinc-400 dark:stroke-zinc-500"
+        className="stroke-zinc-400 dark:stroke-zinc-400"
       />
     </svg>
   )
@@ -110,36 +130,36 @@ function SocialLink({
   )
 }
 
-function Newsletter() {
-  return (
-    <form
-      action="/thank-you"
-      className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
-    >
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <MailIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Stay up to date</span>
-      </h2>
-      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        Get notified when I publish something new, and unsubscribe at any time.
-      </p>
-      <div className="mt-6 flex items-center">
-        <span className="flex min-w-0 flex-auto p-px">
-          <input
-            type="email"
-            placeholder="Email address"
-            aria-label="Email address"
-            required
-            className="w-full appearance-none rounded-[calc(var(--radius-md)-1px)] bg-white px-3 py-[calc(--spacing(2)-1px)] shadow-md shadow-zinc-800/5 outline outline-zinc-900/10 placeholder:text-zinc-400 focus:ring-4 focus:ring-teal-500/10 focus:outline-teal-500 sm:text-sm dark:bg-zinc-700/15 dark:text-zinc-200 dark:outline-zinc-700 dark:placeholder:text-zinc-500 dark:focus:ring-teal-400/10 dark:focus:outline-teal-400"
-          />
-        </span>
-        <Button type="submit" className="ml-4 flex-none">
-          Join
-        </Button>
-      </div>
-    </form>
-  )
-}
+// function Newsletter() {
+//   return (
+//     <form
+//       action="/thank-you"
+//       className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
+//     >
+//       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+//         <MailIcon className="h-6 w-6 flex-none" />
+//         <span className="ml-3">Stay up to date</span>
+//       </h2>
+//       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+//         Get notified when I publish something new, and unsubscribe at any time.
+//       </p>
+//       <div className="mt-6 flex items-center">
+//         <span className="flex min-w-0 flex-auto p-px">
+//           <input
+//             type="email"
+//             placeholder="Email address"
+//             aria-label="Email address"
+//             required
+//             className="w-full appearance-none rounded-[calc(var(--radius-md)-1px)] bg-white px-3 py-[calc(--spacing(2)-1px)] shadow-md shadow-zinc-800/5 outline outline-zinc-900/10 placeholder:text-zinc-400 focus:ring-4 focus:ring-teal-500/10 focus:outline-teal-500 sm:text-sm dark:bg-zinc-700/15 dark:text-zinc-200 dark:outline-zinc-700 dark:placeholder:text-zinc-500 dark:focus:ring-teal-400/10 dark:focus:outline-teal-400"
+//           />
+//         </span>
+//         <Button type="submit" className="ml-4 flex-none">
+//           Join
+//         </Button>
+//       </div>
+//     </form>
+//   )
+// }
 
 interface Role {
   company: string
@@ -188,6 +208,35 @@ function Role({ role }: { role: Role }) {
         </dd>
       </dl>
     </li>
+  )
+}
+
+function Highlights() {
+  let highlights: Array<string> = [
+    'Architect and maintain complex React state and UI systems in collaborative applications.',
+    'Develop serverless backend logic using Cloud Functions and event-driven workflows.',
+    'Design NoSQL data models optimized for scalable access patterns',
+    'Own CI/CD, environment configuration, and release workflows for production applications.',
+    'Implement billing and payments with Stripe, including webhook-driven state synchronization.',
+  ]
+
+  return (
+    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+        <TerminalIcon className="h-6 w-6 flex-none" />
+        <span className="ml-3">Capabilities</span>
+      </h2>
+      <ul className="mt-6 list-disc space-y-4 pl-5">
+        {highlights.map((highlight, highlightIndex) => (
+          <li
+            key={highlightIndex}
+            className="text-sm text-zinc-600 dark:text-zinc-400"
+          >
+            {highlight}
+          </li>
+        ))}
+      </ul>
+    </div>
   )
 }
 
@@ -249,34 +298,34 @@ function Resume() {
   )
 }
 
-function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+// function Photos() {
+//   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
 
-  return (
-    <div className="mt-16 sm:mt-20">
-      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
-          <div
-            key={image.src}
-            className={clsx(
-              'relative w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
-              rotations[imageIndex % rotations.length],
-            )}
-          >
-            <div className="aspect-9/10">
-              <Image
-                src={image}
-                alt=""
-                sizes="(min-width: 640px) 18rem, 11rem"
-                className="absolute inset-0 h-full w-full object-cover"
-              />
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  )
-}
+//   return (
+//     <div className="mt-16 sm:mt-20">
+//       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
+//         {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+//           <div
+//             key={image.src}
+//             className={clsx(
+//               'relative w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
+//               rotations[imageIndex % rotations.length],
+//             )}
+//           >
+//             <div className="aspect-9/10">
+//               <Image
+//                 src={image}
+//                 alt=""
+//                 sizes="(min-width: 640px) 18rem, 11rem"
+//                 className="absolute inset-0 h-full w-full object-cover"
+//               />
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   )
+// }
 
 export default async function Home() {
   let articles = (await getAllArticles()).slice(0, 4)
@@ -316,7 +365,7 @@ export default async function Home() {
         </div>
       </Container>
       {/* <Photos /> */}
-      <Container className="mt-24 md:mt-28">
+      <Container className="mt-16 md:mt-18">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
             {articles.map((article) => (
@@ -324,6 +373,7 @@ export default async function Home() {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
+            <Highlights />
             <Resume />
           </div>
         </div>
