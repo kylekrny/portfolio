@@ -215,7 +215,7 @@ function Expertise() {
   let highlights: Array<string> = [
     'Architect and maintain complex React state and UI systems in collaborative applications.',
     'Develop serverless backend logic using Cloud Functions and event-driven workflows.',
-    'Design NoSQL data models optimized for scalable access patterns',
+    'Design NoSQL data models optimized for scalable access patterns.',
     'Own CI/CD, environment configuration, and release workflows for production applications.',
     'Implement billing and payments with Stripe, including webhook-driven state synchronization.',
   ]
