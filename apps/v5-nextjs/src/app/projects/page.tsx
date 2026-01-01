@@ -3,47 +3,35 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoDrillDown from '@/images/logos/dd-icon.png'
+import logoLeadSherpa from '@/images/logos/lead-sherpa-logo.jpeg'
 
 const projects = [
   {
     name: 'DrillDown',
-    description:
-      'Creating technology to empower civilians to explore space on their own terms.',
+    description: 'AI Powered diagram time with realtime collaboration.',
     link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+    logo: logoDrillDown,
   },
   {
-    name: 'Lead Sherpa',
+    name: '10DLC Compliant SMS',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+      'Architected a web-RTC system that was 10DLC compliant. We beat our competitors to market by a year.',
+    link: {
+      href: 'https://leadsherpa.com/sms/',
+      label: 'Lead Sherpa website',
+    },
+    logo: logoLeadSherpa,
   },
   {
-    name: 'HelioStream',
+    name: 'Propstack',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
-  },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+      'An lead management system allowing our customers to effectively manage millions of records and target the right leads.',
+    link: {
+      href: 'https://leadsherpa.com/propstack/',
+      label: 'Lead Sherpa website',
+    },
+    logo: logoLeadSherpa,
   },
 ]
 
@@ -75,16 +63,22 @@ export default function Projects() {
       >
         {projects.map((project) => (
           <Card as="li" key={project.name}>
-            <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md ring-1 shadow-zinc-800/5 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+            <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-md bg-white shadow-md ring-1 shadow-zinc-800/5 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
               <Image
                 src={project.logo}
                 alt=""
-                className="h-8 w-8"
+                className="h-12 w-12 rounded-md"
                 unoptimized
               />
             </div>
             <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-              <Card.Link href={project.link.href}>{project.name}</Card.Link>
+              <Card.Link
+                href={project.link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {project.name}
+              </Card.Link>
             </h2>
             <Card.Description>{project.description}</Card.Description>
             <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">

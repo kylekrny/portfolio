@@ -6,10 +6,6 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -103,7 +99,12 @@ function SocialLink({
   icon: React.ComponentType<{ className?: string }>
 }) {
   return (
-    <Link className="group -m-1 p-1" {...props}>
+    <Link
+      className="group -m-1 p-1"
+      {...props}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
     </Link>
   )
@@ -236,7 +237,11 @@ function Resume() {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
+      <Button
+        href="/resume.pdf"
+        variant="secondary"
+        className="group mt-6 w-full"
+      >
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
@@ -284,14 +289,16 @@ export default async function Home() {
             Experienced Engineer Building Production Web Apps
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Kyle, a software engineer based in Grand Rapids, MI. I help
-            teams design, build, and ship reliable, production-ready web
-            applications, with a focus on scalable front-end systems and
-            collaborative tools.
+            I have 7 years of experience building and maintaining production web
+            applications across startups and established teams. I currently work
+            on DrillDown, a collaborative diagramming platform, where I focus on
+            complex frontend architecture, real-time state, and long-lived
+            codebases.
           </p>
+
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="github.com/kylekrny"
+              href="https://github.com/kylekrny"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
@@ -308,7 +315,7 @@ export default async function Home() {
           </div>
         </div>
       </Container>
-      <Photos />
+      {/* <Photos /> */}
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
