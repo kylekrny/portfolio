@@ -378,7 +378,7 @@ export function Header() {
                     'var(--header-inner-position)' as React.CSSProperties['position'],
                 }}
               >
-                {/* <div className="relative">
+                <div className="relative">
                   <AvatarContainer
                     className="absolute top-3 left-0 origin-left transition-opacity"
                     style={{
@@ -391,7 +391,7 @@ export function Header() {
                     className="block h-16 w-16 origin-left"
                     style={{ transform: 'var(--avatar-image-transform)' }}
                   />
-                </div> */}
+                </div>
               </div>
             </Container>
           </>

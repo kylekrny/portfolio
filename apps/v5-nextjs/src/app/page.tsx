@@ -6,11 +6,6 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
@@ -24,12 +19,12 @@ function TerminalIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
-      stroke-width="1.5"
+      strokeWidth="1.5"
       className="size-6"
     >
       <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-400"
         d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"
       />
@@ -333,7 +328,7 @@ export default async function Home() {
   return (
     <>
       <Container className="mt-9">
-        <div className="mx-auto max-w-2xl">
+        <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
             Experienced Engineer Building Production Web Apps
           </h1>
@@ -365,14 +360,14 @@ export default async function Home() {
         </div>
       </Container>
       {/* <Photos /> */}
-      <Container className="mt-16 md:mt-18">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-20">
-          {/* <div className="flex flex-col gap-16">
+      <Container className="ml mt-16 md:mt-18">
+        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 md:max-w-none lg:grid-cols-2">
+          <div className="flex flex-col gap-16">
             {articles.map((article) => (
               <Article key={article.slug} article={article} />
             ))}
-          </div> */}
-          <div className="space-y-10">
+          </div>
+          <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Expertise />
             <Resume />
           </div>
