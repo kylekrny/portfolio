@@ -213,6 +213,7 @@ function Expertise() {
     'Design NoSQL data models optimized for scalable access patterns.',
     'Own CI/CD, environment configuration, and release workflows for production applications.',
     'Implement billing and payments with Stripe, including webhook-driven state synchronization.',
+    'Integrate LLM-based AI capabilities into applications, including prompt design and API-driven workflows.',
   ]
 
   return (
