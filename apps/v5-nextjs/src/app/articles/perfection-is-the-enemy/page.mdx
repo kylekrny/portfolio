@@ -1,0 +1,39 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import wireframe from './wireframe.jpg'
+
+export const article = {
+  author: 'Kyle Kearney',
+  date: '2026-01-02',
+  title: 'Perfection Is the Enemy of Shipping',
+  description:
+    'As I finish evolving DrillDown from an early prototype into a more production-ready application, I realized I used perfection as a way to avoid the risk of shipping. This article serves as a lesson learned and offers a few takeaways for building your own project.',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+As I finish evolving DrillDown from an early prototype into a more production-ready application, I realized I used perfection as a way to avoid the risk of shipping. This article serves as a lesson learned and offers a few takeaways for building your own project.
+
+<Image src={wireframe} alt="wireframe drawing" />
+
+**TLDR:** Prioritize functional, tested code that handles errors instead of “perfect code”. Perfection doesn’t exist, but users do.
+
+**Takeaways for starting a new project:**
+
+- Define and follow basic acceptance criteria.
+- Implement an E2E testing process (whether automatic or manual).
+- Gracefully handle errors and implement logging where possible.
+
+Having spent a majority of my career working on projects at scale, the time spent optimizing for 1–2% gains pays out huge dividends over thousands to millions of users. However, I found that applying that same mindset to a brand-new project led to a vicious habit of running away from completion.
+
+Early on with DrillDown, I found myself spending hours refactoring code that hadn’t seen the light of day, afraid that if the imaginary user in my head ran into a performance or schema issue, that would be the end of me.
+
+Now, as I get ready to demo to potential users, regressions keep popping up. The time spent optimizing for the millionth user would have been much better spent developing the E2E testing process for the first user.
+
+All this is to say that order of operations matter. You must walk before you can run. You must run into a problem before you can truly solve it. You must have your first user before you can have your millionth.
+
+Build it. Ship it. Revise it. Repeat.
